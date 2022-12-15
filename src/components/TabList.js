@@ -4,9 +4,9 @@ import Tab from "./Tab";
 const TabList = (props) => {
   const recipes = props.allRecipes;
   return (
-    <div className="container">
+    <div className='container'>
       {recipes.map((r) => (
-        <Tab recipe={r} selectTab={props.selectTab} />
+        <Tab recipe={r} />
       ))}
     </div>
   );

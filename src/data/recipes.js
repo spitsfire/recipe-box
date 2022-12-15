@@ -1,5 +1,6 @@
 export default [
   {
+    isSelected: false,
     vegetarian: false,
     vegan: false,
     glutenFree: false,
@@ -349,6 +350,7 @@ export default [
       "https://spoonacular.com/chocolate-fudge-cookies-639031",
   },
   {
+    isSelected: false,
     vegetarian: false,
     vegan: false,
     glutenFree: true,
@@ -2014,6 +2016,7 @@ export default [
       "https://spoonacular.com/honey-ginger-lemon-iced-tea-716301",
   },
   {
+    isSelected: false,
     vegetarian: false,
     vegan: false,
     glutenFree: true,
@@ -2410,6 +2413,7 @@ export default [
     spoonacularSourceUrl: "https://spoonacular.com/sex-in-a-glass-659782",
   },
   {
+    isSelected: false,
     vegetarian: false,
     vegan: false,
     glutenFree: false,
@@ -3018,6 +3022,7 @@ export default [
       "https://spoonacular.com/buttermilk-onion-rings-636558",
   },
   {
+    isSelected: false,
     vegetarian: false,
     vegan: false,
     glutenFree: true,
