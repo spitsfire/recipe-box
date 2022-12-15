@@ -13,7 +13,7 @@ const Box = () => {
 
   return (
     <div className='box container bg-info py-2'>
-      <TabList allRecipes={recipes} selectTab={selectTab} />
+      <TabList allRecipes={recipes} selectTab={selectTab} selectedRecipe={selectedRecipe} />
       <Card selectedRecipe={selectedRecipe} />
     </div>
   );
