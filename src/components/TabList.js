@@ -1,13 +1,10 @@
 import React from "react";
 import Tab from "./Tab";
 
-const TabList = (props) => {
-  const recipes = props.allRecipes;
+const TabList = () => {
   return (
     <div className='container'>
-      {recipes.map((r) => (
-        <Tab recipe={r} />
-      ))}
+      <Tab />
     </div>
   );
 };
