@@ -1,23 +1,21 @@
 import React from "react";
 
-const Card = (props) => {
-  const { selectedRecipe } = props;
+const Card = ({ selectedRecipe }) => {
+  const { instructions, ingredients } = selectedRecipe;
+  const IngredientsList = ingredients.map((ing) => {
+    return <li>{ing.name}</li>;
+  });
+
   return (
-    <div className="container bg-light p-1">
-      <div className="row">
-        <div className="col">
+    <div className='container bg-light p-1'>
+      <div className='row'>
+        <div className='col'>
           <h4>Ingredients</h4>
-          <ul>
-            {selectedRecipe.extendedIngredients
-              ? selectedRecipe.extendedIngredients.map((item) => (
-                  <li>{item.original}</li>
-                ))
-              : null}
-          </ul>
+          <ul>{IngredientsList}</ul>
         </div>
-        <div className="col">
+        <div className='col'>
           <h4>Instructions</h4>
-          {selectedRecipe.instructions}
+          {instructions}
         </div>
       </div>
     </div>
